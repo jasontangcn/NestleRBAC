@@ -1,0 +1,120 @@
+11:46:37,843  INFO Environment:460 - Hibernate 3.0.1
+11:46:37,890  INFO Environment:478 - loaded properties from resource hibernate.properties: {hibernate.connection.password=****, hibernate.c3p0.acquire_increment=2, hibernate.jdbc.batch_versioned_data=true, hibernate.query.substitutions=true 1, false 0, yes 'Y', no 'N', hibernate.cache.region_prefix=hibernate.test, hibernate.c3p0.idle_test_period=3000, hibernate.show_sql=true, hibernate.c3p0.max_statements=100, hibernate.c3p0.validate=false, hibernate.c3p0.timeout=5000, hibernate.default_batch_fetch_size=8, hibernate.jdbc.use_streams_for_binary=true, hibernate.max_fetch_depth=1, hibernate.c3p0.min_size=2, hibernate.connection.username=sa, hibernate.connection.driver_class=com.microsoft.jdbc.sqlserver.SQLServerDriver, hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider, hibernate.c3p0.max_size=2, hibernate.connection.provider_class=org.hibernate.connection.C3P0ConnectionProvider, hibernate.cglib.use_reflection_optimizer=true, hibernate.order_updates=true, hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory, hibernate.dialect=org.hibernate.dialect.SQLServerDialect, hibernate.connection.url=jdbc:microsoft:sqlserver://localhost;DatabaseName=ACS;SelectMethod=cursor}
+11:46:37,906  INFO Environment:505 - using java.io streams to persist binary types
+11:46:37,906  INFO Environment:506 - using CGLIB reflection optimizer
+11:46:37,906  INFO Environment:536 - using JDK 1.4 java.sql.Timestamp handling
+11:46:38,234  INFO AnnotationConfiguration:92 - Mapping class using metadata: tomhornson.nestle.acs.Account
+11:46:38,968  INFO AnnotationConfiguration:92 - Mapping class using metadata: tomhornson.nestle.acs.Role
+11:46:38,984  INFO AnnotationConfiguration:92 - Mapping class using metadata: tomhornson.nestle.acs.Privilege
+11:46:39,000  INFO Configuration:852 - processing extends queue
+11:46:39,000  INFO Configuration:856 - processing collection mappings
+11:46:39,359  INFO Configuration:865 - processing association property references
+11:46:39,359  INFO Configuration:894 - processing foreign key constraints
+11:46:39,500  INFO Dialect:91 - Using dialect: org.hibernate.dialect.SQLServerDialect
+11:46:39,531  INFO SettingsFactory:88 - Maximum outer join fetch depth: 1
+11:46:39,531  INFO SettingsFactory:91 - Default batch fetch size: 8
+11:46:39,531  INFO SettingsFactory:95 - Generate SQL with comments: disabled
+11:46:39,531  INFO SettingsFactory:99 - Order SQL updates by primary key: enabled
+11:46:39,531  INFO SettingsFactory:285 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:46:39,546  INFO ASTQueryTranslatorFactory:21 - Using ASTQueryTranslatorFactory
+11:46:39,546  INFO SettingsFactory:107 - Query language substitutions: {no='N', true=1, yes='Y', false=0}
+11:46:39,562  INFO ConnectionProviderFactory:53 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+11:46:39,578  INFO C3P0ConnectionProvider:50 - C3P0 using driver: com.microsoft.jdbc.sqlserver.SQLServerDriver at URL: jdbc:microsoft:sqlserver://localhost;DatabaseName=ACS;SelectMethod=cursor
+11:46:39,578  INFO C3P0ConnectionProvider:51 - Connection properties: {user=sa, password=****}
+11:46:39,578  INFO C3P0ConnectionProvider:54 - autocommit mode: false
+Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@143c8b3 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@1d04653 [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, idleConnectionTestPeriod -> 3000, initialPoolSize -> 2, maxIdleTime -> 5000, maxPoolSize -> 2, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@2ce908 [ description -> null, driverClass -> null, factoryClassLocation -> null, jdbcUrl -> jdbc:microsoft:sqlserver://localhost;DatabaseName=ACS;SelectMethod=cursor, properties -> {user=******, password=******} ] , preferredTestQuery -> null, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ] , factoryClassLocation -> null, numHelperThreads -> 3, poolOwnerIdentityToken -> 143c8b3 ] 
+11:46:42,187  INFO SettingsFactory:157 - Scrollable result sets: enabled
+11:46:42,187  INFO SettingsFactory:165 - JDBC3 getGeneratedKeys(): disabled
+11:46:42,203  INFO TransactionFactoryFactory:34 - Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+11:46:42,218  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:46:42,218  INFO SettingsFactory:177 - Automatic flush during beforeCompletion(): disabled
+11:46:42,218  INFO SettingsFactory:180 - Automatic session close at end of transaction: disabled
+11:46:42,218  INFO SettingsFactory:186 - Second-level cache: enabled
+11:46:42,218  INFO SettingsFactory:190 - Query cache: disabled
+11:46:42,234  INFO SettingsFactory:272 - Cache provider: org.hibernate.cache.EhCacheProvider
+11:46:42,250  INFO SettingsFactory:205 - Optimize cache for minimal puts: disabled
+11:46:42,250  INFO SettingsFactory:210 - Cache region prefix: hibernate.test
+11:46:42,250  INFO SettingsFactory:214 - Structured second-level cache entries: enabled
+11:46:42,250  INFO SettingsFactory:222 - Echoing all SQL to stdout
+11:46:42,250  INFO SettingsFactory:226 - Statistics: disabled
+11:46:42,250  INFO SettingsFactory:230 - Deleted entity synthetic identifier rollback: disabled
+11:46:42,265  INFO SettingsFactory:244 - Default entity-mode: pojo
+11:46:42,703  INFO SessionFactoryImpl:147 - building session factory
+11:46:43,125  WARN EhCacheProvider:97 - Could not find configuration [hibernate.test.tomhornson.nestle.acs.Account]; using defaults.
+11:46:43,796  WARN EhCacheProvider:97 - Could not find configuration [hibernate.test.tomhornson.nestle.acs.Privilege]; using defaults.
+11:46:43,890  WARN EhCacheProvider:97 - Could not find configuration [hibernate.test.tomhornson.nestle.acs.Role]; using defaults.
+11:46:44,203  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+11:46:44,218  INFO Dialect:91 - Using dialect: org.hibernate.dialect.SQLServerDialect
+11:46:44,218  INFO Configuration:852 - processing extends queue
+11:46:44,218  INFO Configuration:856 - processing collection mappings
+11:46:44,218  INFO Configuration:865 - processing association property references
+11:46:44,234  INFO Configuration:894 - processing foreign key constraints
+11:46:44,234  INFO Configuration:852 - processing extends queue
+11:46:44,234  INFO Configuration:856 - processing collection mappings
+11:46:44,234  INFO Configuration:865 - processing association property references
+11:46:44,234  INFO Configuration:894 - processing foreign key constraints
+11:46:44,234  INFO SchemaExport:114 - Running hbm2ddl schema export
+11:46:44,250  INFO SchemaExport:130 - exporting generated schema to database
+11:46:44,250  INFO ConnectionProviderFactory:53 - Initializing connection provider: org.hibernate.connection.C3P0ConnectionProvider
+11:46:44,250  INFO C3P0ConnectionProvider:50 - C3P0 using driver: com.microsoft.jdbc.sqlserver.SQLServerDriver at URL: jdbc:microsoft:sqlserver://localhost;DatabaseName=ACS;SelectMethod=cursor
+11:46:44,250  INFO C3P0ConnectionProvider:51 - Connection properties: {user=sa, password=****}
+11:46:44,250  INFO C3P0ConnectionProvider:54 - autocommit mode: false
+Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@1113622 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@f8f7db [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, idleConnectionTestPeriod -> 3000, initialPoolSize -> 2, maxIdleTime -> 5000, maxPoolSize -> 2, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@d73c7a [ description -> null, driverClass -> null, factoryClassLocation -> null, jdbcUrl -> jdbc:microsoft:sqlserver://localhost;DatabaseName=ACS;SelectMethod=cursor, properties -> {user=******, password=******} ] , preferredTestQuery -> null, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ] , factoryClassLocation -> null, numHelperThreads -> 3, poolOwnerIdentityToken -> 1113622 ] 
+11:46:44,562 DEBUG SchemaExport:144 - alter table Account_Role drop constraint FK4AC9CB88B86505E8
+11:46:45,437 DEBUG SchemaExport:150 - Unsuccessful: alter table Account_Role drop constraint FK4AC9CB88B86505E8
+11:46:45,750 DEBUG SchemaExport:162 - create table Account (
+   id int identity not null,
+   name varchar(255) not null,
+   pwd varchar(255) not null,
+   version int null,
+   primary key (id)
+)
+11:46:45,828 DEBUG SchemaExport:162 - create table Account_Role (
+   accounts_id int null,
+   roles_id int null
+)
+11:46:45,843 DEBUG SchemaExport:162 - create table Privilege (
+   id int identity not null,
+   name varchar(255) not null,
+   version int null,
+   primary key (id)
+)
+11:46:45,859 DEBUG SchemaExport:162 - create table Role (
+   id int identity not null,
+   name varchar(255) not null,
+   version int null,
+   primary key (id)
+)
+11:46:45,859 DEBUG SchemaExport:162 - create table Role_Privilege (
+   roles_id int null,
+   privileges_id int null
+)
+11:46:45,875 DEBUG SchemaExport:162 - create table Role_Role (
+   Role_id int null,
+   parents_id int null
+)
+11:46:45,875 DEBUG SchemaExport:162 - alter table Account_Role add constraint FK4AC9CB88B86505E8 foreign key (accounts_id) references Account
+11:46:45,906 DEBUG SchemaExport:162 - alter table Account_Role add constraint FK4AC9CB88BD1FD93A foreign key (roles_id) references Role
+11:46:45,906 DEBUG SchemaExport:162 - alter table Role_Privilege add constraint FK81B4C228BD1FD93A foreign key (roles_id) references Role
+11:46:45,921 DEBUG SchemaExport:162 - alter table Role_Privilege add constraint FK81B4C22896045EA8 foreign key (privileges_id) references Privilege
+11:46:45,968 DEBUG SchemaExport:162 - alter table Role_Role add constraint FK8B6A269F98294673 foreign key (Role_id) references Role
+11:46:45,968 DEBUG SchemaExport:162 - alter table Role_Role add constraint FK8B6A269FE59B5186 foreign key (parents_id) references Role
+11:46:45,968  INFO SchemaExport:174 - schema export complete
+11:46:45,984  WARN JDBCExceptionReporter:34 - SQL Warning: 0, SQLState: 
+11:46:45,984  WARN JDBCExceptionReporter:35 - [Microsoft][SQLServer 2000 Driver for JDBC]Database changed to ACS
+11:46:45,984  WARN JDBCExceptionReporter:34 - SQL Warning: 0, SQLState: 
+11:46:45,984  WARN JDBCExceptionReporter:35 - [Microsoft][SQLServer 2000 Driver for JDBC][SQLServer]
+11:46:45,984  WARN JDBCExceptionReporter:34 - SQL Warning: 0, SQLState: 
+11:46:45,984  WARN JDBCExceptionReporter:35 - [Microsoft][SQLServer 2000 Driver for JDBC]
+11:46:45,984  WARN JDBCExceptionReporter:34 - SQL Warning: 0, SQLState: 
+11:46:45,984  WARN JDBCExceptionReporter:35 - [Microsoft][SQLServer 2000 Driver for JDBC][SQLServer]
+11:46:45,984  INFO Dialect:91 - Using dialect: org.hibernate.dialect.SQLServerDialect
+11:46:46,000  INFO Configuration:852 - processing extends queue
+11:46:46,000  INFO Configuration:856 - processing collection mappings
+11:46:46,000  INFO Configuration:865 - processing association property references
+11:46:46,000  INFO Configuration:894 - processing foreign key constraints
+11:46:46,000  INFO Configuration:852 - processing extends queue
+11:46:46,000  INFO Configuration:856 - processing collection mappings
+11:46:46,000  INFO Configuration:865 - processing association property references
+11:46:46,000  INFO Configuration:894 - processing foreign key constraints
+11:46:46,015  INFO SessionFactoryImpl:373 - Checking 0 named queries
